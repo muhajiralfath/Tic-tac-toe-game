@@ -43,7 +43,7 @@
               <h2>Player 1</h2>
               <h3>Player Name</h3>
               <p class="player-symbol">X</p>
-              <button class="btn btn-alt">Edit</button>
+              <button class="btn btn-alt" id="edit-player-1-btn">Edit</button>
             </article>
           </li>
           <li>
@@ -51,7 +51,7 @@
               <h2>Player 2</h2>
               <h3>Player Name</h3>
               <p class="player-symbol">O</p>
-              <button class="btn btn-alt">Edit</button>
+              <button class="btn btn-alt" id="edit-player-2-btn">Edit</button>
             </article>
           </li>
         </ol>
@@ -59,22 +59,22 @@
       </section>
 
       <section id="active-game">
-        <article>
-          <h3>You Won, <span id="winner-name">Player Name</span>!</h3>
+        <article id="game-over">
+          <h2>You Won, <span id="winner-name">PLAYER NAME</span>!</h2>
           <p>Click Start a New game above, to Start a new game!</p>
         </article>
 
-        <p>It's Your Turn <span id="active-player">Player Name</span>!</p>
-        <ol>
+        <p>It's Your Turn <span id="active-player-name">PLAYER NAME</span>!</p>
+        <ol id="game-board">
+          <li class="disabled">X</li>
           <li></li>
-          <li></li>
-          <li></li>
+          <li class="disabled">O</li>
 
           <li></li>
-          <li></li>
+          <li class="disabled">X</li>
           <li></li>
 
-          <li></li>
+          <li class="disabled">O</li>
           <li></li>
           <li></li>
         </ol>
