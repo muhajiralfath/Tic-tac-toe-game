@@ -38,6 +38,10 @@ function swictPlayer() {
 }
 
 function selectGameField(event) {
+  if (players[0].name === "" || players[1].name === "") {
+    alert("Please set custom Player name fot both players");
+    return;
+  }
   if (event.target.tagName !== "LI" || gameIsOver) {
     return;
   }
